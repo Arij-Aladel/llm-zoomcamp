@@ -1,5 +1,7 @@
 ## Homework: Evaluation and Monitoring
 
+Solution: [solution.ipynb](solution.ipynb)
+
 In this homework, we'll evaluate the quality of our RAG system.
 
 > It's possible that your answers won't match exactly. If it's the case, select the closest one.
@@ -141,7 +143,7 @@ What's the F score for `rouge-1`?
 
 ## Q5. Average rouge score
 
-Let's compute the average between `rouge-1`, `rouge-2` and `rouge-l` for the same record from Q4
+Let's compute the average F-score between `rouge-1`, `rouge-2` and `rouge-l` for the same record from Q4
 
 - 0.35
 - 0.45
@@ -150,18 +152,9 @@ Let's compute the average between `rouge-1`, `rouge-2` and `rouge-l` for the sam
 
 ## Q6. Average rouge score for all the data points
 
-Now let's compute the score for all the records
+Now let's compute the F-score for all the records and create a dataframe from them.
 
-```python
-rouge_1 = scores['rouge-1']['f']
-rouge_2 = scores['rouge-2']['f']
-rouge_l = scores['rouge-l']['f']
-rouge_avg = (rouge_1 + rouge_2 + rouge_l) / 3
-```
-
-And create a dataframe from them
-
-What's the agerage `rouge_2` across all the records?
+What's the average F-score in `rouge_2` across all the records?
 
 - 0.10
 - 0.20
